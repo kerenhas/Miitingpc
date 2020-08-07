@@ -1,0 +1,36 @@
+<?php
+
+/* 
+ * me permet d'ajouter une tache
+ * @author Keren Hassan
+ */
+
+require_once '../model/class.pdomiiting.php';
+$pdo =  PdoMiiting::getPdoMiiting();
+// session_start();
+
+//on recupere l'id de la famille
+$idF=$_GET['form'];
+
+//recuperer l'id evenement
+ $id=$pdo->getIdEvent($_SESSION['id']);
+ 
+ 
+// Quand on clique sur le bouton de new tache
+if(isset($_POST['inputNewTache']))
+  {
+    if ($_POST['inputAvancement'] == 100 OR isset($_POST['inputFait']))
+    {
+      $fait = 1;
+      $_POST['inputAvancement'] = 100;
+    }
+    else
+    {
+      $fait = 0;
+    }
+    //on ajoute la tache à la base de donnee selon les valeurs saisies
+  $ajouterTache=$pdo->ajouterTache($idF,addslashes($_POST['inputNom']),addslashes($_POST['inputDescription']),$_POST['inputDate'],$_POST['inputAvancement'],$fait);
+  header("Location:taches");
+
+  }
+  require '../vues/v_addTache.php';

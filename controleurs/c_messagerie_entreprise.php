@@ -1,0 +1,29 @@
+<?php
+
+/* 
+ * page pour que des que l'utilisateur clique sur nous contacter d'un prestataire
+ */
+require_once '../model/class.pdomiiting.php';
+$pdo =  PdoMiiting::getPdoMiiting();
+
+ 
+    //faire une requete pour avoir l'ensemble des noms des prestataires contactes en fonction de l'evenement et de l'utilisateur
+ //   $tabprestaconv=$pdo->getprestaconv($_SESSION['id'], $_SESSION['idevent']);
+    // $tabprestaconv=$pdo->getclientconv($_SESSION['id']);
+
+$prestataire=$pdo->getPrestaCaract($_SESSION['id']);
+
+//requete pour avoir toutes les conversation quand c'est lui le receveur 
+$message=$pdo->getMessageRecuPresta($_SESSION['id']);
+
+//requete qui calcule le nombre de messages recus
+ $nbrMessagesRecus=$pdo->getNbrMessagesRecusPresta($_SESSION['id']); 
+
+
+//requete qui permet d'avoir le nombre de messages envoyes
+ $nbrMessagesEnvoyes=$pdo->getNbrMessagesEnvoyesPresta($_SESSION['id']);
+
+
+
+ include '../vues/v_messagerie_entreprise.php'; 
+//  include '../vues/exemple.html'; 

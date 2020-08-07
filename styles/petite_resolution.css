@@ -1,0 +1,38 @@
+.wrapper-organiser
+{
+     display: grid;
+    grid-template-columns:  250px 150px  150px 200px 150px;
+    grid-template-rows: 5em ;
+    margin: 0px;
+}
+
+.img_mariage_accueil
+{
+  width: 15%;
+}
+
+/*pour la page d'accueil*/
+.wrapper-idees{
+    display: grid;
+   grid-template-columns: 244px  244px  244px 244px;
+   grid-template-rows: 10em 10em ;
+   margin: 0px;
+}
+
+.wrapper-mariages
+{
+    display: grid;
+    grid-template-columns: 242px  242px  242px 242px;
+    grid-template-rows: 20em ;
+    margin: 0px;
+
+}
+
+.btn_navbar
+{
+    position: absolute;
+    /* bottom: 94%; */
+    left: 74%;
+    top: 96%;
+    width: 20%;
+}

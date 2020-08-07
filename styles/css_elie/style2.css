@@ -1,0 +1,137 @@
+.bordure {
+	/* background-image: url("../images_miiting/images_boutique_marie/robe.png"); */
+	height: 280px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bordure {
+	width: 80%;
+	margin: auto;
+	display: flex;
+}
+
+.container .left{
+	width: 47%;
+}
+
+.container .left h1 {
+	font-size: 40px;
+	font-family: Proxima Nova;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.container .left p{
+	font-family: poppins;
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.bold {
+	font-weight: 600;
+	font-family: poppins;
+	font-size: 15px;
+	color: #7FA8FE;
+}
+
+.content {
+	width: 70%;
+	margin: auto;
+	box-shadow: 8px 8px 5px -3px rgba(0,0,0,0.08);
+	margin-bottom: 40px;
+}
+
+h2{
+	margin: auto;
+	width: 140px;
+	padding: 10px;
+	border:solid;
+	border-width: 3px;
+	border-color: #04217F;
+	margin-top: 60px;
+	text-align: center;
+	font-size: 20px;
+	font-family: proxima nova;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+.content .right {
+	width: 70%;
+	display: inline-block;
+	float: right;
+}
+
+.prestataires .image{
+	width: 20%;
+	display: inline-block;
+}
+
+.prestataires .image img{
+	width: 305px;
+}
+
+.prestataires .right{
+	width: 65%;
+}
+
+.prestataires .right h3{
+	font-family: proxima nova;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.prestataires .right p{
+	font-family: poppins;
+	font-size: 15px;
+	line-height: 20px;
+	padding-right: 10px;
+}
+
+.prestataires .right a{
+	padding: 15px;
+	color: white;
+	background-color: #7FA8FE;
+	text-decoration: none;
+	font-family: poppins;
+	font-size: 15px;
+	border-radius: 10px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.prestataires .right a:hover{
+	background-color: #527AFE;
+}
+
+#arrows {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20px;
+}
+
+#seemore {
+	font-size: 14px;
+	font-family: poppins;
+	color: #7FA8FE;
+	text-align: center;
+	padding: 10px;
+}
+
+#pub1 {
+	width: 191px;
+	position: absolute;
+	top: 462px;
+	padding: 10px;
+}
+
+#pub2 {
+	width: 189px;
+	position: absolute;
+	top: 679px;
+	padding: 10px;
+}

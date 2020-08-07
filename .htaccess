@@ -1,0 +1,92 @@
+RewriteEngine On 
+
+RewriteRule ^inscription-([0-9])$ controleurs/c_inscription.php?form=$1 [L]
+RewriteRule ^inscription$ controleurs/c_inscription.php
+RewriteRule ^connexion-([0-9])$ controleurs/c_connexion.php?form=$1 [L]
+RewriteRule ^connexion-([0-9])$ controleurs/c_connexion.php?form=$1 [L]
+
+RewriteRule ^index$ controleurs/c_accueil.php
+
+RewriteRule ^deconnexion$ controleurs/c_deconnexion.php
+RewriteRule ^prestataires$ controleurs/c_search_prestataire.php
+
+RewriteRule ^prestation$ controleurs/c_prestation_accueil.php
+RewriteRule ^presentation-prestataire-([0-9]+)$ controleurs/c_presentation_prestataire.php?idprestataire=$1 [L]
+RewriteRule ^prestation-([0-9]+)$ controleurs/c_prestation.php?idprestation=$1 [L]
+RewriteRule ^mariee$ controleurs/c_mariee.php
+RewriteRule ^marie$ controleurs/c_marie.php
+RewriteRule ^event-([0-9])$ controleurs/c_event.php?formmodal=$1 [L]
+RewriteRule ^event-([0-9])$ controleurs/c_event.php?form=$1 [L]
+RewriteRule ^newevent$ controleurs/c_newevent.php
+
+RewriteRule ^taches$ controleurs/c_tache.php
+RewriteRule ^detailFamille-([0-9])$  controleurs/c_detailFamille.php?id=$1 [L]
+RewriteRule ^edittaches-([0-9])$  controleurs/c_editTache.php?form=$1 [L]
+RewriteRule ^supprimertache-([0-9])$  controleurs/c_deleteTache.php?form=$1 [L]
+RewriteRule ^ajouterTache-([0-9])$   controleurs/c_addTache.php?form=$1 [L]
+RewriteRule ^prestaevent-([0-9])$ controleurs/c_prestamonevent.php?form=$1 [L]
+RewriteRule ^prestaevent$ controleurs/c_prestamonevent.php
+RewriteRule ^prestaevent-([0-9])-([0-9])$ controleurs/c_prestamonevent.php?form=$1&idpresta=$2 [L]
+RewriteRule ^prestaevent$ vues/v_prestationmonevent.php
+RewriteRule ^message-([0-9])$ vues/v_addconversation.php
+RewriteRule ^mamessagerie$ controleurs/c_messagerie.php
+#RewriteRule ^conversation$ controleurs/c_conversation.php
+#RewriteRule ^newconversation$ controleurs/c_newconversation.php
+
+
+RewriteRule ^mesevents$ controleurs/c_mesevents.php
+RewriteRule ^mesevents-([0-9])$ controleurs/c_mesevents.php?idevent=$1 [L]
+RewriteRule ^addevent$ controleurs/c_modal_add_event.php
+
+RewriteRule ^nouvelleconversation-([0-9])$ controleurs/c_modal_addconversation.php?idpresta=$1 [L]
+RewriteRule ^nouvelleconversation$ controleurs/c_modal_addconversation.php
+
+
+RewriteRule ^corpo$ controleurs/c_corpo.php
+#RewriteRule ^event-([0-9])$ controleurs/c_event.php?form=$1 [L]
+#RewriteRule ^event-([0-9])$ controleurs/c_event.php?form=$1 [L]
+RewriteRule ^anniversaire$ controleurs/c_prestation_annive.php
+RewriteRule ^corporate$ vues/v_prestation_corpo.php
+RewriteRule ^articlecorpo$ vues/v_articlecorpo.php
+
+RewriteRule ^idees-([0-9])$ controleurs/c_idees.php?form=$1 [L]
+RewriteRule ^idees$ controleurs/c_accueil_idees.php
+RewriteRule ^theme-([0-9])$ controleurs/c_ensemblearticle.php?id=$1 [L]
+RewriteRule ^article-([0-9])$ controleurs/c_detailarticle?id=$1 [L]
+
+#RewriteRule ^idees-([0-9])$ controleurs/c_idees.php?form=$1 [L]
+RewriteRule ^miitingappli$ vues/v_miitingappli.php
+RewriteRule ^application$ vues/v_application.php
+RewriteRule ^miitingor-([0-9])$ controleurs/c_miitingor.php?form=$1
+RewriteRule ^miitingorvalider-([0-9])$ controleurs/c_miitingor.php?form=$1
+RewriteRule ^foot$ vues/v_footer.html
+RewriteRule ^description$ vues/v_descripmiiting.php
+RewriteRule ^legal$ vues/v_legal.php
+RewriteRule ^press$ vues/v_press.php
+RewriteRule ^mariage$ controleurs/c_mariage.php?
+#RewriteRule ^art/([a-z]+)$ article.php?id=$1
+RewriteRule ^traiteur-([0-9])$ controleurs/c_traiteur.php?donne=$1 [L]
+RewriteRule ^presta-([0-9])$ controleurs/c_prestationdetail.php?donne=$1 [L]
+RewriteRule ^presta$ controleurs/c_prestationdetail.php
+RewriteRule ^unprestataire$  controleurs/c_unprestataire.php [L]
+RewriteRule ^communaute-article$ controleurs/c_communaute_article.php
+RewriteRule ^communaute$  controleurs/c_communaute.php [L]
+
+
+RewriteRule ^accesEntreprise$ controleurs/c_accesEntreprise.php?
+RewriteRule ^inscription_entreprise$ controleurs/c_inscription_entreprise.php?
+RewriteRule ^accueilEntreprise$ controleurs/c_accueilEntreprise.php?
+RewriteRule ^vitrine$ controleurs/c_vitrine.php?
+RewriteRule ^agenda$ controleurs/c_agenda.php?
+RewriteRule ^messagerie_entreprise$ controleurs/c_messagerie_entreprise.php
+
+##me permet de prendre l'url et pas le chemin, ici par exemple ca va retour,ner l'url et pas index.php 
+##le NC c'est pour ne pas prendre en compte la casse c'est a dire les majuscule te les minuscules 
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?url=$1 [NC,L]
+#
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://www.miiting.net/$1 [R,L] 
+

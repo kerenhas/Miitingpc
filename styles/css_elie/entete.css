@@ -1,0 +1,81 @@
+.entete{
+	width: 100%;
+}
+
+.firstline{
+	width: 80%;
+	margin:auto;
+	display: flex;
+}
+
+.entreprise{
+	display: flex;
+}
+.entreprise img{
+	width: 40px;
+	height: 40px;
+}
+
+.entreprise h3{
+	margin-top: 5px;
+	margin-left: 10px;
+	font-family: poppins;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#logo {
+	width: 200px;
+	margin-left: 270px;
+}
+.login {
+	display: flex;
+}
+
+.login h3{
+	font-size: 18px;
+	font-family: poppins;
+	padding-right: 20px;
+	font-weight: 400;
+}
+.secondline{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftentete{
+	display: flex;
+}
+
+.righentete h3{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: poppins;
+}
+
+.listentete{
+	width: 85%;
+	margin: auto;
+}
+
+.listentete ul{
+	list-style:none; 
+	display: flex;
+	justify-content: space-around;
+	padding-left: 0px;
+}
+
+.listentete li{
+	font-size: 15px;
+	font-weight: 400;
+	font-family: poppins;
+}
+
+#entetediv{
+	border:solid 1px;
+	border-color: #527AFE;
+	width: 80%;
+	opacity: 50%;
+}

@@ -1,0 +1,503 @@
+/* .entete{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.firstline{
+	width: 80%;
+	margin:auto;
+	display: flex;
+}
+
+.entreprise{
+	display: flex;
+}
+.entreprise img{
+	width: 40px;
+	height: 40px;
+}
+
+.entreprise h3{
+	margin-top: 5px;
+	margin-left: 10px;
+	font-family: poppins;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#logo {
+	width: 200px;
+	margin-left: 270px;
+}
+.login {
+	display: flex;
+}
+
+.login h3{
+	font-size: 18px;
+	font-family: poppins;
+	padding-right: 20px;
+	font-weight: 400;
+}
+.secondline{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftentete{
+	display: flex;
+}
+
+.righentete h3{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: poppins;
+}
+
+.listentete{
+	width: 85%;
+	margin: auto;
+}
+
+.listentete ul{
+	list-style:none; 
+	display: flex;
+	justify-content: space-around;
+	padding-left: 0px;
+}
+
+.listentete li{
+	font-size: 15px;
+	font-weight: 400;
+	font-family: poppins;
+} */
+
+hr{
+	border:solid 1px;
+	border-color:  #527AFE;;
+	width: 80%;
+	opacity: 50%;
+	}
+
+#check{
+  display: none;
+}
+
+.checkbtn{
+	margin-left: 40px;
+  font-size: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  }
+
+.background{
+	/* background-image: url("../img/background3.png"); */
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body{
+	margin: 0;
+}
+
+h1{
+	font-family: proxima nova;
+	font-weight: 500;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 30px;
+	color: white;
+}
+
+form{
+	width: 60%;
+	margin: auto;
+}
+
+.search {
+	position: relative;
+	width: 110%;
+}
+
+
+input{
+	border:none;
+	padding: 14px;
+	text-align: center;
+	width: 46%;
+	margin-left: 0px;
+	border-radius: 40px;
+	border-color: white;
+	text-align: left;
+	margin-top: 51px;
+	padding-left: 50px;
+	font-size: 15px;
+	font-family: poppins;
+}
+
+#right{
+	margin-left: -40px;
+	border-radius:0px 40px 40px 0px;
+	border-left-color: 20px;
+	padding-left: 20PX;
+}
+
+input:focus{
+	outline: none;
+}
+
+.search img{
+	position: absolute;
+	top: 65px; left: 12px;
+	width: 25px;
+}
+
+.search button{
+	padding-left: 33px;
+	padding-right: 33px;
+	padding-bottom: 14px;
+	padding-top: 13px;
+	border-radius: 40px;
+	margin-left: -58px;
+	border:none;
+	background-color: #7FA8FE;
+	color: white;
+	font-size: 16px;
+	font-family: poppins;
+}
+
+button:focus{
+	outline: none;
+}
+
+button:hover {
+	background-color: #527AFE;
+}
+
+.container {
+	background-color: #F5F5F5;
+
+}
+
+.content{
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content2{
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content3{
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content4{
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content5{
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container h2{
+	font-size: 20px;
+	font-family: poppins;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.container hr{
+	width: 230px;
+	height: 0px;
+	border: solid 1px;
+	border-color: tomato;
+	margin-bottom: 50px;
+}
+
+.box{
+	margin-top: 20px;
+	width: 30%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 8px 8px 5px -3px rgba(0,0,0,0.08);
+	margin-bottom: 20px;
+}
+
+.box img{
+
+	width: 119px;
+	padding-left: 35%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.box h3{
+	font-family: poppins;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.box p{
+	font-size: 14px;
+	font-family: poppins;
+	text-align: center;
+}
+
+
+#pub2 {
+	position: absolute;
+	top: 800px;
+	right: 30px;
+	width: 200px;
+}
+/*Footer*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.firstcolone h2{
+	font-size: 18px;
+	font-family: poppins;
+	font-weight: 400;
+	color: #527AFE;
+}
+
+.firstcolone p{
+	color: black;
+	font-size: 14px;
+}
+
+.footer-container{
+	background-color: #F5F5F5;
+}
+
+.footer-content{
+	text-decoration: none;
+	width: 80%;
+	margin: auto;
+	display: flex;
+}
+
+.firstcolone, .secondcolone, .thirdcolone, .fourcolone, .fivecolone{
+	width: 30%;
+	padding-left: 5px;
+}
+.firstcolone img{
+	width: 150px;
+}
+
+.firstcolone li{
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-family: poppins;
+	list-style: none;
+}
+.secondcolone h2{
+	font-size: 18px;
+	font-family: poppins;
+	font-weight: 400;
+	color: #527AFE;
+}
+
+.secondcolone ul{
+	padding-left: 0px;
+}
+
+.secondcolone a{
+	text-decoration: none;
+	font-family: poppins;
+	font-size: 12px;
+	color: black;
+	line-height: 18px;
+}
+
+.thirdcolone ul{
+	list-style: none;
+	padding-left: 0px;
+	font-family: poppins;
+	font-size: 12px;
+}
+
+.thirdcolone li{
+	display: flex;
+}
+
+.thirdcolone h2{
+	font-size: 18px;
+	font-family: poppins;
+	font-weight: 400;
+	color: #527AFE;
+	margin-bottom: -3px;
+}
+
+.thidcolone p{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.thirdcolone img{
+	margin-top: 12px;
+	width: 20px;
+	height: 20px;
+	padding-right:10px;
+}
+
+.fourcolone h2{
+	font-size: 18px;
+	font-family: poppins;
+	font-weight: 400;
+	color: #527AFE;
+}
+
+.fourcolone ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.fourcolone img{
+	width: 20px;
+	height: 20px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.fourcolone li{
+	margin-bottom: 10px
+}
+
+.fourcolone a{
+	text-decoration: none;
+	font-family: poppins;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.fivecolone h2{
+	font-size: 18px;
+	font-family: poppins;
+	font-weight: 400;
+	color: #527AFE;
+}
+
+.fivecolone img{
+	width: 120px;
+	margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+/*Header*/
+
+h1{
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 24px;
+}
+.entreprise img{
+	width: 30px;
+	height: 30px;
+}
+
+#logo{
+	width: 150px;
+}
+
+.entreprise h3{
+	font-size:16px;
+}
+
+#check{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	/*Header*/
+
+ .checkbtn{
+    display: block;
+    margin-left: 10px;
+  }
+
+ .listentete ul{
+  	margin-bottom: 50px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    background-color: #7FA8FE;
+    color: white;
+  
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+.entreprise img{
+	width: 30px;
+	height: 30px;
+}
+
+#logo{
+	width: 80px;
+	margin-left: 20px;
+}
+
+ h3{
+	font-size:16px;
+	margin-right: 40px;
+}
+
+/*Footer*/
+
+	.footer-content {
+		flex-flow: column;
+	}
+
+ul{
+	padding-left: 0px;
+}
+	.firstcolone, .secondcolone, .thirdcolone, .fourcolone, .fivecolone{
+		margin: auto;}
+
+
+@media only screen and (max-width: 750px) {
+
+	/* .content, .content2, .content3, .content4{ */
+
+
+}
+.content, .content2, .content3, .content4{
+	
+		width: 100%;
+		margin: auto;
+	}

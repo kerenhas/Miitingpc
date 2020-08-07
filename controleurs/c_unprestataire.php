@@ -1,0 +1,17 @@
+<?php
+
+require_once '../model/class.pdomiiting.php';
+$pdo =  PdoMiiting::getPdoMiiting();
+
+
+//prendre les infos du prestataires pour les afficher dans la vue
+$id=$_GET['id'];
+
+$notrepresta=$pdo->getPrestaCaract($id);
+$carspreta=$pdo->getPrestataire();
+
+//faire une requete pour avoir dans le modal une liste de prestataire dans la liste deroulante
+
+// empecher le modal de s'ouvrir quand il n'est pas connecter
+
+include '../vues/v_unprestataire.php';

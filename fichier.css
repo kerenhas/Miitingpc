@@ -1,0 +1,1343 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 sept. 2019, 14:56:09
+    Author     : Aurélie
+*/
+
+
+
+.dropdownmenu ul { /* Masquage des sous-menu par defaut */
+display: none;
+}
+.dropdownmenu li {
+/* Disposition horizontale des elements de menu */
+display: inline-block;
+/* Positionnement relative des elements de menu pour pouvoir positionner les sous-menu correctement en absolu */
+position: relative;
+}
+.dropdownmenu a {
+/* On transforme les liens en bloc pour pouvoir les dimensionner */
+display: block;
+/* Dimensions des liens */ 
+  width: 100px; 
+  height: 30px; 
+  line-height: 30px; 
+  /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+padding: 3px 10px;
+text-align: center;
+}
+.dropdownmenu li:hover ul {
+/* Affichage du soumenu au survol */
+display: block;
+/* Positionnement du sous-menu */ 
+  position: absolute; 
+  top: 36px; /* Hauteur du menu + hauteur du padding top et bottom : 30 + 3 + 3 = 36 */ 
+  left: 0px; /* Decalage du sous-menu par rapport aux liens du menu*/ 
+  z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */ }
+.dropdownmenu ul a img{ /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher en inline-block comme les liens de menu, ils seront donc verticaux */
+display: block;
+  margin: 30px;
+}
+
+#droite {
+    margin-left:20%  ;  
+}
+
+#menu{
+    text-decoration: none;
+    
+}
+.container {
+  width: auto;
+  max-width: 200px;
+  padding: 0 15px;
+  margin: 30px;
+}
+/*.carousel-item active
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    display: flex;
+    
+}*/
+#gris{
+    color: gray;
+}
+/**
+ * ZOOM IMAGE EFFECT ON HOVER // wpRock.fr
+   */
+  .wprock-img-zoom-hover .wprock-img-zoom 
+  {
+  overflow: hidden;
+position: relative; 
+                
+  }
+ .wprock-img-zoom-hover .wprock-img-zoom img {
+ max-width: 100%;
+ -moz-transition: all 0.8s;
+ -webkit-transition: all 0.8s;
+ transition: all 0.8s;
+ }
+/*            .wprock-img-zoom-hover .wprock-img-zoom * {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }*/
+ .wprock-img-zoom-hover:hover .wprock-img-zoom img {
+-moz-transform: scale(1.06);
+ -webkit-transform: scale(1.06);
+transform: scale(1.06);
+}
+            
+#zoom{
+ width: 100%;
+ max-width:100%;
+ max-height: 70%;
+ border: 5px ;
+ height: 50%
+ }
+ #imgbaas
+ {
+/*     width: 10%;*/
+max-width: 280px;
+padding: 4px;
+ margin: 1px;
+ border: 1px ;
+ height: 60px;
+width:auto  ;
+ }
+/*            #idee
+            {
+                height: 180px;
+                width:350px;
+            }
+    */
+ .textImage
+ { 
+/*position:absolute;
+left: 55px;
+top: 61px;
+right: 30px;
+margin-left: auto;
+ margin-right: auto;
+text-align: center;
+font-family: Gabriola, "Gentium Basic", Georgia; 
+font-size: 30px;
+color:white;*/
+
+position:absolute;
+left: 55px;
+top: 61px;
+right: 30px;
+margin-left: auto;
+ margin-right: auto;
+text-align: center;
+font-family: Gabriola, "Gentium Basic", Georgia; 
+font-size: 30px;
+color:white;
+    }
+    
+#bordur_descriptif
+{
+  border: double;
+  text-align: center;
+  width: auto;
+  padding: 0 15px;
+  margin: 30px;
+background-color: seashell;
+}
+ #bordur_press
+{
+ color: #E0FFFF;
+  border: double;
+  text-align: center;
+  width: auto;
+  padding:15px;
+  margin-left: 50px;
+  margin-right: 50px;
+margin-top: 30px;
+margin-bottom: 30px;
+  background-color: seashell;
+}   
+.centrer
+{
+    text-align:center;
+
+    }
+    .ctr{
+        text-align: center;
+    }
+/*    #toto
+{
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+}*/
+/*.wrapper {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+ margin: 3px;
+  padding: 5px;
+  
+}*/
+
+/*.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  z-index: 2;
+}
+.box2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  z-index: 1;
+}*/
+.wrapper-mariages
+{
+    display: grid;
+    grid-template-columns: 270px  270px  270px 270px;
+    grid-template-rows: 20em ;
+    margin: 0px;
+
+}
+.wrapper-logo-entete
+{    
+  display: grid;
+  grid-template-columns: 30%  70% ;
+  grid-template-rows: 3em ;
+  margin: 0px;
+
+}
+.wrapper-photosmariage1
+{
+    display: grid;
+    grid-template-columns: 350px  350px 350px 350px;
+    grid-template-rows: 30em ;
+    margin: 0px;
+    
+}
+.wrapper-photosmariage2
+{
+    display: grid;
+    grid-template-columns: 270px  270px  270px 270px;
+    grid-template-rows: 20em 20em 20em ;
+    margin: 0px;
+    
+}
+.wrapper-telecharger
+{
+  display: grid;
+  grid-template-columns: 70px  170px;
+  grid-template-rows: 3em ;
+  margin: 0px;
+}
+.wrapper-album
+{
+  display: grid;
+  grid-template-columns: 28em  26em;
+  grid-template-rows: 19em ;
+  margin: 0px;
+}
+.wrapper-album2
+{
+  display: grid;
+  grid-template-columns: 28em  50em;
+  grid-template-rows: 19em ;
+  margin: 0px;
+}
+.wrapper-bulles
+{
+  display: grid;
+  grid-template-columns: 50em  50em;
+  grid-template-rows: 14em ;
+  margin: 0px;
+}
+.wrapper-bulles1
+{
+  display: grid;
+  grid-template-columns: 50em  50em;
+  grid-template-rows: 11em ;
+  margin: 0px;
+}
+.wrapper-organiser
+{
+     display: grid;
+    grid-template-columns:  400px 200px   200px 200px 200px;
+    grid-template-rows: 5em ;
+    margin: 0px;
+}
+.wrapper-organiser-logo
+{
+  display: grid;
+  grid-template-columns:  270px;
+  grid-template-rows: 6em 1em;
+  margin: 0px;
+}
+/*pour la page d'accueil*/
+.wrapper-idees{
+     display: grid;
+    grid-template-columns: 254px  254px  254px 254px;
+    grid-template-rows: 10em 10em ;
+    margin: 0px;
+}
+/*pour la page idee*/
+.wrapper-ideespronew{
+     display: grid;
+    grid-template-columns: 35em  35em  ;
+    grid-template-rows: 30em ;
+    margin: 0px;
+}
+.wrapper-carousel{
+     display: grid;
+    grid-template-columns: 254px  254px  254px 254px;
+    grid-template-rows: 20em ;
+    margin: 0px;
+}
+
+.wrapper-ideesproolder
+{
+    display: grid;
+    grid-template-columns: 300px  300px 300px 300px ;
+    grid-template-rows: 15em ;
+   margin: 0px;
+}
+.wrapper-ideesclient
+{
+    display: grid;
+    grid-template-columns: 300px  700px  ;
+    grid-template-rows: 20em 20em 20em;
+   margin: 0px;
+}
+
+.wrapper_costume_accueil
+{
+  display: grid;
+  grid-template-columns: 300px  300px 300px 300px ;
+  grid-template-rows: 20em ;
+ margin: 0px;
+}
+.wrapper-prestation
+{
+    display: grid;
+    grid-template-columns: 300px  300px 300px 300px ;
+    grid-template-rows: 15em 15em;
+    margin-left: 202px;
+    margin-bottom: 60px;
+    /*background-color: #E0FFFF;*/
+}
+
+.wrapper-prestationevent
+{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px ;
+    grid-template-rows: 15em ;
+    margin-left: 202px;
+    margin-bottom: 60px;
+    /*background-color: #E0FFFF;*/
+}
+.wrapper-menuprestation
+{
+    display: grid;
+    grid-template-columns: 180px  180px 180px ;
+    grid-template-rows: 2em 2em 2em 2em;
+    margin: 0px;   
+}
+
+.wrapper-menuidees
+{
+    display: grid;
+    grid-template-columns: 180px  180px 180px ;
+    grid-template-rows: 3em ;
+    margin: 0px;   
+}
+.wrapper-menumariee
+{
+    display: grid;
+    grid-template-columns: 180px  180px  ;
+    grid-template-rows: 2em 2em ;
+    margin: 0px;   
+}
+.wrapper-menumarie
+{
+    display: grid;
+    grid-template-columns: 180px ;
+    grid-template-rows: 2em 2em 2em ;
+    margin: 0px;   
+}
+
+.wrapper-menumonevent
+{
+    display: grid;
+    grid-template-columns: 180px ;
+    grid-template-rows: 2em 2em 2em 2em;
+    margin: 0px;   
+}
+.wrapper-menucorpoevent
+{
+    display: grid;
+    grid-template-columns: 200px 180px ;
+    grid-template-rows: 2em 2em 2em ;
+    margin: 0px; 
+}
+.wrapper-articlismariages
+{
+    display: grid;
+    grid-template-columns: 800px  810px;
+    grid-template-rows: 60em ;
+    margin: 0px;   
+}
+.wrapper-articlismariages1
+{
+    display: grid;
+    grid-template-columns: 390px  420px;
+    grid-template-rows: 22em 22em 22em;
+    margin: 0px;   
+}
+.wrapper-articlismariages2
+{
+    display: grid;
+    grid-template-columns: 500px  500px 500px;
+    grid-template-rows: 20em  20em;
+    margin: 3%;   
+}
+.wrapper-articlismariages3
+{
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 20em  ;
+    margin: 0px;   
+}
+
+.wrapper-marieeboutique
+{
+    display: grid;
+    grid-template-columns: 550px  550px 550px;
+    grid-template-rows: 30em 20em 20em 20em  ;
+    margin: 0px;  
+}
+.wrapper-marieeboutiquedescrip
+{
+    display: grid;
+    grid-template-columns:  250px 200px;
+    grid-template-rows: 18em 18em 18em;
+    margin: 15px;  
+}
+.wrapper-marieeboutiquetitre
+{
+    display: grid;
+    grid-template-columns:  250px ;
+    grid-template-rows: 5em 10em;
+    margin: 0px;  
+}
+
+.wrapper-robemariee
+{
+    display: grid;
+    grid-template-columns:  295px 280px 295px 280px 295px 280px;
+    grid-template-rows: 20em ;
+    margin: 10px;  
+}
+.wrapper-autremariee
+{
+    display: grid;
+    grid-template-columns: 580px 580px 580px;
+    grid-template-rows: 5em ;
+    margin: 0px;  
+}
+.wrapper-cerle
+{
+    display: grid;
+    grid-template-columns:  505px ;
+    grid-template-rows: 14em 14em;
+    margin: 0px; 
+}
+.wrapper-inscription
+{
+    display: grid;
+    grid-template-columns:  450px 550px ;
+    grid-template-rows: 40em;
+    margin: 0px; 
+}
+
+.wrapper-inscription-aligne
+{
+  display: grid;
+  grid-template-columns:  150px 190px ;
+  grid-template-rows: 4em 4em 4em 4em 4em;
+  margin: 0px; 
+}
+.wrapper-inscriptionform
+{
+    display: grid;
+    grid-template-columns:  50px 50px ;
+    grid-template-rows: 4em 4em 4em 4em 4em ;
+    margin: 0px;  
+}
+
+.wrapper-inscriptionnomm
+{
+    display: grid;
+    grid-template-columns:  70px  200px ;
+    grid-template-rows: 3px;
+    margin: 10px; 
+}
+.wrapper-inscriptionmail
+{
+     display: grid;
+    grid-template-columns:  50px  250px ;
+    grid-template-rows: 3px;
+    margin: 10px;  
+}
+.wrapper-inscriptiontelmdp
+{
+     display: grid;
+    grid-template-columns:  110px  200px ;
+    grid-template-rows: 1px;
+    margin: 10px;  
+}
+/*classe pour les trois bulles du a prpos dans la page applimiiting
+*/
+.wrapper-aproposmiting{
+    display: grid;
+    grid-template-columns: 550px  550px 550px;
+    grid-template-rows: 17em  ;
+    margin: 10px;     
+}
+/* wrapper qui permet de mettre les champs cote a cote dans le formulaire du miiting d'or' 
+*/
+.wrapper-formcotecote
+{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 7em  ;
+    margin: 10px;  
+}
+.wrapper-videoappli
+{
+    display: grid;
+    grid-template-columns: 550px  550px 550px ;
+    grid-template-rows: 18em  18em 18em;
+    margin: 0px;
+}
+/*
+le wrapper qui permet de diviser le cadre du modal au niveau du formulaire qui s'affiche apres l'inscritption dans l'evenement et lorsqu'il veut ajouter un 
+un evenement
+cette div va permettre de mettre d'un cote une image et d'un autre cote notre formulaire'
+*/
+.wrapper-form_modal_ajouter_evenement
+{
+    display: grid;
+    grid-template-columns: 550px  550px  ;
+    grid-template-rows: 53em ;
+    margin: 0px;
+}
+.wrapper-form_modal_ajouter_evenement-champ
+{
+    display: grid;
+    grid-template-columns: 200px  200px  ;
+    grid-template-rows: 2em ;
+    margin: 0px; 
+}
+
+.wrapper_check
+{
+    display: grid;
+    grid-template-columns: 130px  130px  130px 130px  ;
+    grid-template-rows: 3em 3em 3em;    
+    margin: 0px;   
+}
+.wrapper-form_modal_ajouter_evenement_ville
+{
+    display: grid;
+    grid-template-columns: 50px  150px  ;
+    grid-template-rows: 3em ;
+    margin: 0px;  
+}
+/*
+le wrapper qui permet de faire l'entete comme un menu avec l'evenement ensuite les taches, logo, budget....
+*/
+.wrapper_enteteevent
+{
+    display: grid;
+    grid-template-columns: 50px  50px 50px 50px 50px  ;
+    grid-template-rows: 4em ;
+    margin: 0px;  
+}
+.wraper-prestademande
+{
+    display: grid;
+    grid-template-columns: 20em 20em 20em 20em 20em  ;
+    grid-template-rows: 10em ;
+    margin: 0px;
+}
+
+.wrapper-menutache
+{
+     display: grid;
+    grid-template-columns: 20em 85em ;
+    grid-template-rows: 70em ;
+    margin: 0px;
+}
+
+.wrapper-menuprestevent
+{
+     display: grid;
+    grid-template-columns: 20em 85em ;
+    grid-template-rows: 30em ;
+    margin: 0px;
+}
+.wrapper-mesevents
+{
+     display: grid;
+    grid-template-columns: 254px  254px  254px 254px 254px;
+    grid-template-rows: 10em 10em ;
+    margin: 0px;
+}
+
+.wrapper-tactac
+{
+  display: grid;
+  grid-template-columns: 280px 70px 304px ;
+  grid-template-rows:   10em  ;
+  margin: 0px;
+}
+
+.policeNewRoman{
+   font-family: "Times New Roman";
+
+}
+
+#idee
+{
+   width: 100%;
+ max-width: 280px;
+ border: 1px ;
+ margin: 2px;
+padding: 3px;
+ height: 70%  
+}
+.hov
+{
+    	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hov-idees
+{
+    
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hov:hover
+{
+    -moz-transform: scale(1.06);
+ -webkit-transform: scale(1.06);
+transform: scale(1.06);
+  max-width: 100%;
+    max-height: 100%;
+    -moz-transition: all 0.8s;
+ -webkit-transition: all 0.8s;
+ transition: all 0.8s;
+ 
+ -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+
+/*    color :red;
+ transform: scale(1.06);   */
+}
+.hov-idees:hover
+{
+    -moz-transform: scale(1.06);
+ -webkit-transform: scale(1.06);
+transform: scale(1.06);
+  max-width: 100%;
+    max-height: 100%;
+    -moz-transition: all 0.8s;
+ -webkit-transition: all 0.8s;
+ transition: all 0.8s;
+
+}
+    .max{
+        max-width: 100%;
+        /*max-height: 70%;*/
+          overflow: hidden;
+       position: relative;
+margin: 0px;
+    }
+    .ombre
+    {
+        filter: grayscale(80%);
+      /*background-color: rgba(255, 255, 255, 000);  L'opacite se regle ici */
+ /*opacity: .5;*/
+    }
+    .nbphto{
+        font-size:100%;
+color:red;
+text-align: center; 
+/*background-image:url("img.jpeg") ;
+background-repeat:no-repeat;
+background-size: 100%;
+background-position: center;
+background-position: 100% 100%;*/
+  max-width: 100%;
+    max-height: 100%
+/*-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 5px;
+border : 3px dotted black;*/
+
+    }
+    
+    /*Permet aux texte mis en premier qui sur les images des idees d'etre mieux centrer'*/
+    .ideeTexte1{
+        position:relative;
+        margin: 2px;
+        padding: 5px ;
+        left: 25%;
+        bottom: 60%;
+    }
+
+    #lespreparatifs
+    {
+      position:relative;
+      margin: 2px;
+      padding: 5px ;
+      left: 25%;
+      bottom: 65%;
+    }
+/*      Permet aux texte mis en deuxieme qui sur les images des idees d'etre mieux centrer'
+      .ideeTexte2
+      {
+          position:relative;
+          margin: 2px;
+          padding: 5px ;
+          top: 10%;
+          left: 20%;
+      }*/
+
+#organiser {
+    padding: 0%;
+    WIDTH: 100%;
+    height: 100%;
+    margin-top: 10%;
+}
+
+
+a.sanslien:link{
+    text-decoration:none;
+    /*color: black;*/
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 43px; /* Location of the box */
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  /* display: block; */
+  width: 80%;
+  max-width: 70em;
+  height: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+{
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Flou */
+.blur{
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.blur:hover{
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+#bordure
+{
+       border: 0.5px grey dotted;
+}
+
+body{padding-top:20px;}
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control 
+{
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right 
+{
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators
+{
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+/*.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}*/
+
+.backimage{
+    background-image:url(img.jpeg);
+}
+.rouge
+{
+color: #d43f3a   ; 
+}
+.bleu
+{
+  
+   color:#337ab7;
+}
+
+.imgmariee
+{
+    margin-left: 3%;
+    padding: 15px; 
+    height: 100%; 
+    width: 100%;
+
+}
+.rond
+{
+     overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:15em;  
+}
+
+.demicercle
+{
+   height: 50%;
+    width: 100%;  /*2*height*/
+    background: red;
+    border-top-left-radius: 200px; /* 4*height */
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 200px; /* 4*height*/
+  margin-bottom: 4%;
+  
+      /*margin-left: 3%;*/
+    /*padding: 15px;*/ 
+
+/*border-radius:50%;*/
+}
+.demicercleenvers
+{
+      height: 50%;
+    width: 100%;  /* 2*height */
+    background: red;
+    border-bottom-left-radius: 200px; /* 4*height */
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 200px; /* 4*height*/
+    margin-bottom: 4%;
+        /*margin-left: 3%;*/
+    /*padding: 15px;*/ 
+
+}
+
+.toto
+
+{/*
+    
+    background-image: <img src="imgmarrie2.jpg" alt="" class="ctr  demicercle">*/
+background-image: url(images/coiffure.jpg);
+ height: 50%;
+    width: 100%;  /* 2*height */
+    background: red;
+    border-top-left-radius: 200px; /* 4*height */
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 200px; /* 4*height*/
+  margin-bottom: 4%;
+}
+
+.tata
+
+{/*
+    
+    background-image: <img src="imgmarrie2.jpg" alt="" class="ctr  demicercle">*/
+background-image: url(images/coiffure.jpg);
+background-repeat:no-repeat;
+ height: 50%;
+    width: 100%;  /* 2*height*/
+    background: red;
+    border-bottom-left-radius: 200px; /* 4*height*/
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 200px; /* 4*height*/
+    margin-bottom: 4%;
+    
+
+}
+
+
+.dropbtn {
+  /*background-color: #4CAF50;*/
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*.dropdown-content a:hover {background-color: #ddd;}*/
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
+
+
+#container-insc{
+    width:1000px;
+    margin:0 auto;
+    margin-top:5%;
+}
+#container-connexion
+{
+   width:400px;
+    margin:0 auto;
+    margin-top:10%;   
+}
+/* Bordered form */
+/*#ftmm{
+
+
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}*/
+#form-connexion
+{
+       width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#hh{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+/*pour ne pas mettre des cases mais des lignes dans le formulaires d'inscription' */
+.lifne{
+    	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+
+/*image du carouselle pour eviter la deformation*/
+.imageflottanteProfil
+{
+  position:relative;
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+  height: 220px;
+  overflow:hidden;
+}
+
+.imageflottanteProfil img
+{
+  position:absolute;
+  width:100%;
+  top:0; left:0;
+}
+/* utiliser pour la bordure des textes du a propos dans la page appli miiting*/
+.bordurearrondis
+{
+    border: 3px #5bc0de dashed;
+    border-radius: 30px;
+}
+/* utiliser pour mettre un margin 5*/
+.margin5
+{
+    margin: 5px;
+}
+.vert
+{
+color: #53af57;    
+}
+
+/* The Modal (background) */
+/*.modal {
+  display: none;  Hidden by default 
+  position: fixed;  Stay in place 
+  z-index: 1;  Sit on top 
+  left: 0;
+  top: 0;
+  width: 100%;  Full width 
+  height: 100%;  Full height 
+  overflow: auto;  Enable scroll if needed 
+  background-color:rgb(128,128,128)  Fallback color 
+  background-color: rgba(0,0,0,0.4);  Black w/ opacity 
+}*/
+
+/* Modal Content/Box */
+/*.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;  15% from the top and centered 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;  Could be more or less, depending on screen size 
+}*/
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carre
+{
+    margin:10px;
+    width:300px;
+    background:	#DCDCDC;
+    height:150px;
+    text-align:center;
+}
+
+
+
+
+/*pour le curseur des taches */
+.marg20
+{
+  margin-top: 30px;
+}
+.td2
+{
+  display: none;
+}
+.inputNewFamille
+{
+  width: 250px;
+}
+.divCenter
+{
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.tableauTache
+{
+  margin-top: 2%;
+}
+.selectFamille
+{
+  width: 240px;
+}
+.spanAvancement
+{
+    
+  margin-left: 5%;
+}
+
+
+/*css de la jauge avancement*/
+.range_css{
+-webkit-appearance:none;
+width:300px;
+height:1rem;
+background:linear-gradient(to bottom,#8F61EE 10%,#8F61EE);
+cursor:ew-resize;
+border-radius:1.5rem}
+
+/*****ie*****/
+
+.range_css::-ms-track {
+height:1.4rem;
+border-radius:1.5rem;
+background:transparent;
+border-color:transparent;
+color:transparent;/*enleve les traits*/}
+
+.range_css::-ms-fill-lower {
+height:1.4rem;
+background:linear-gradient(to bottom,#26a65b 10%,#36e27d);
+border:0 solid transparent;
+border-radius:1.5rem}
+
+.range_css::-ms-fill-upper {
+background:linear-gradient(to bottom,#26a65b 10%,#36e27d);
+border:0 solid transparent;
+border-radius:1.5rem}
+
+.range_css::-ms-thumb {
+border:1px solid #ddd;
+width:.8rem;
+background:white;
+height:.8rem;
+border-radius:50%;
+box-shadow:0 0 .125rem #aaa}
+
+.range_css:focus::-ms-fill-lower,
+.range_css:focus::-ms-fill-upper {
+
+background:linear-gradient(to bottom,#26a65b 10%,#36e27d)
+
+}
+
+.range_css::-ms-tooltip{display:none}/*enleve le title*/
+
+/*****fin ie*****/
+
+/*****firefox*****/
+.range_css::-moz-range-thumb{
+border:1px solid #ddd;
+width:1.4rem;
+height:1.4rem;
+border-radius:50%;
+box-shadow:0 0 .125rem #aaa}
+
+.range_css::-moz-range-track{
+border:3px solid transparent;
+padding:.5rem;
+height:1rem;
+border-radius:1.5rem;
+background:none}
+/*****fin firefox*****/
+
+/*****Chrome,Opera*****/
+.range_css::-webkit-slider-thumb{
+-webkit-appearance:none;
+border:1px solid #ddd;
+width:1.4rem;
+height:1.4rem;
+border-radius:50%;
+background:white;
+box-shadow:0 0 .125rem #aaa}
+
+/*****fin Chrome,Opera*****/
+
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.simple-login-container{
+    width:300px;
+    max-width:100%;
+    margin:50px auto;
+}
+.simple-login-container h2{
+    text-align:center;
+    font-size:20px;
+}
+
+.simple-login-container .btn-login{
+    background-color:#FF5964;
+    color:#fff;
+}
+a{
+    color:#fff;
+}
+
+.hovcolor
+{
+  color:black;
+}
+
+.hovcolor:hover 
+{
+  color:royalblue;
+}
+
+.gras_entete
+{
+  font-weight: 580;
+}
+
+.bandeau_mariages_accueil
+{
+  /* Snow GhostWhite*/
+  background-color:  LavenderBlush ;
+}
+
+.result_focus{
+  background-color:azure;
+}
+
+.insci-label
+{
+  margin-left: 12%;
+  margin-top: 12%;
+}
+

@@ -1,0 +1,71 @@
+<?php
+
+require_once '../model/class.pdomiiting.php';
+$pdo =  PdoMiiting::getPdoMiiting();
+// session_start();
+
+// requete qui permet d'avoir l'ensemble des evenements auquel participe notre prestataire
+
+// on a une table eventpresta qui met en relation l'ensemble des prestataire pour chaque evenement donc il faut ABSOLUMENT
+// que le client puis remplir sa fiche de prestataire reserve 
+// Donc ca faut absolument le faire
+
+//la pour avoir l'ensemble ds evenement on va faire un select sur eventpresta apres on verra qd remplir cette table LOL
+$event=$pdo->getevent($_SESSION['id']);
+
+
+//on va ajouter le bouton nouveau evenement 
+//dans la table eventpresta on va mettre un champ booleen pour bien confirme ts ca
+//les deux utilisateurset prestataires doivent certifies que le contrat a bien ete signe 
+// si c'est e cas alors cava faire partie des evenements a affiches dans l'agenda
+
+//donc pour confirmer le contrat on va creer un nouveau bouton 
+// qui va nous amener a un formulaire de confirmation de contrat
+// dans lequel on va mettre le prix, la date de signature, le lieu, et le jour de la prestation..
+
+ //Quand il clique sur le bouton
+ if (isset($_POST['creer']))
+ {
+
+    //on devrait l'envoyer vers une aure page qui permet de creer un nouvel evenement
+    //une page sous la forme d'un formulaire 
+    include '../vues/v_agenda-creerevent.php'; 
+ }
+else{
+   include '../vues/v_agenda.php';  
+}
+if (isset($_POST['ajouter']))
+ { 
+     //si le approuv_util est egale a un  pour cet evenement precis 
+     // donc faire une requete pour savoir si l'evenement existe dans contrat
+     // on va trouver l'id de l'evenement grace a la date, le nom et prenom de l'utilisateur 
+
+
+    $idevent=$pdo->getIdEventParam($_POST['nom'],$_POST['date']);
+    // maintenant on va chercher si cet evenement a un contrat dans la table contrat avec ce sprestataire
+    $contrat=$pdo->getContrat($idevent[0]['idevent'],$_SESSION['id']);
+    
+    // si y'a ps de contrat
+    if(count($contrat)==0)
+    {
+        // on fais un insert mais pr ca faut voir les donnees qu'on donne et on met $approuv_presta a un 1
+        $pdo->insertContratPrestataire($idevent[0]['idevent'],$_SESSION['id'],$_POST['lieu'],$_POST['date_signature'],$_POST['budget']);
+    }
+    else // si il a deja un contrat
+    {
+        // alors on doit verifier que les donnees inserers dans le formuaire sont bien egale a celle de la base de donne
+            // si c'est le cas alors on met le truc booleen approuv_presta a un  
+            if($contrat[0]['lieu']==$_POST['lieu'] && $contrat[0]['date_signature']==$_POST['date_signature'] && $contrat[0]['budget']==$_POST['budget'])
+            {
+                //on modifie la bdd et on met approuv_presta a un 
+             $pdo->updateContratApprouvPresta($contrat[0]['id']);
+            }
+            else{
+                echo '<script type="text/javascript">window.alert("les donnees inseres ne sont pas les meme que  celles du client");</script>';
+                // on envoie un message pour lui dire de confirmer les donnees lui dire de voir avec le client puisque les donnees ne sont pas les memes
+            }
+    }
+
+
+ }
+

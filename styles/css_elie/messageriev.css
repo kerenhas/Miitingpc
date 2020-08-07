@@ -1,0 +1,302 @@
+.entete{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.firstline{
+	width: 80%;
+	margin:auto;
+	display: flex;
+}
+
+.entreprise{
+	display: flex;
+}
+.entreprise img{
+	width: 40px;
+	height: 40px;
+}
+
+.entreprise h3{
+	margin-top: 5px;
+	margin-left: 10px;
+	font-family: poppins;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#logo {
+	width: 200px;
+	margin-left: 270px;
+}
+.login {
+	display: flex;
+}
+
+.login h3{
+	font-size: 18px;
+	font-family: poppins;
+	padding-right: 20px;
+	font-weight: 400;
+}
+.secondline{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftentete{
+	display: flex;
+}
+
+.righentete h3{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: poppins;
+}
+
+.listentete{
+	width: 85%;
+	margin: auto;
+}
+
+.listentete ul{
+	list-style:none; 
+	display: flex;
+	justify-content: space-around;
+	padding-left: 0px;
+}
+
+.listentete li{
+	font-size: 15px;
+	font-weight: 400;
+	font-family: poppins;
+}
+
+hr{
+	border:solid 1px;
+	border-color: #527AFE;
+	width: 80%;
+	opacity: 50%;
+	}
+
+
+.container {
+	width: 70%;
+	margin: auto;
+}
+
+.header {
+	display: flex;
+	background-color: #F1F1F1;
+	box-shadow: -1px 2px 8px -4px rgba(0,0,0,0.75);
+}
+
+.header h1 {
+	font-family: proxima nova;
+	font-weight: 500;
+	margin-left: 25px;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.header h2{
+	font-family: poppins;
+	font-weight: normal;
+	margin-left: 70px;
+	font-size: 18px;
+	margin-top: 17px;
+}
+
+.header a {
+	text-decoration: none;
+	color: black;
+	font-family: poppins;
+	background-color: #7FA8FE;
+	height: 30px;
+	border-radius: 10px;
+	color: white;
+	margin-top: 7px;
+	margin-left: 300px;
+	padding: 8px;
+}
+
+.header a:hover{
+	background-color: #527AFE;
+}
+.content{
+	display: flex;
+	width: 70%;
+	margin: auto;
+
+}
+.left {
+	display: block;
+	height: 500px;
+	width: 23%;
+	background-color: #F1F1F1;
+	margin-top: 4px;
+}
+
+.left1 img{
+	padding-top: 10px;
+	width: 30px;
+	height: 30px;
+	padding-right: 20px;
+}
+
+.content {
+display: flex;
+}
+.left1 p{
+
+	font-family: poppins;
+	font-size: 16px;
+}
+ .left1 {
+ 	padding-top: 20px;
+ 	display: flex;
+ 	padding-left: 40px;
+ }
+
+ .left2{
+ 	display: flex;
+ 	margin-left: 40px;
+ }
+
+ .left2 img{
+ 	padding-top: 10px;
+ 	width: 30px;
+	height: 30px;
+	padding-right: 20px;
+	padding-left: 0px;
+ }
+
+ .left2 p{
+ 	font-family: poppins;
+ 	font-size: 16px;
+}
+
+.right {
+	width: 96%;
+	padding-left: 20px;
+	height: 150px;
+	
+}
+
+.right h2{
+	font-family: poppins;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	font-weight: 500;
+	opacity: 50%;
+}
+
+.right img{
+	width: 200px;
+	margin-left:240px;
+	margin-top: 20px;
+}
+
+
+.rightup{
+	overflow: scroll;
+	width: 77%;
+}
+
+.right h3{
+	font-family: poppins;
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+input{
+	margin-top: 100px;
+	margin-left: 20px;
+	font-family: poppins;
+	width: 648px;
+	padding: 10px;
+	border-color: #7FA8FE;
+	opacity: 70%;
+	padding-bottom: 80px;
+	margin-bottom: 20px;
+}
+
+input:focus{
+	outline: none;
+}
+
+.right1 {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 20px;
+}
+
+.right1 img  {
+	width: 30px;
+	height: 30px;
+	margin-top: 20px;
+
+}
+
+.right1 h2{
+	margin-top:10px;
+	color: #527AFE;
+	font-family: poppins;
+	font-weight: 600;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+span {
+	font-weight: bold;
+}
+
+#séparateur{
+	border:solid 1px;
+	border-color: #527AFE;
+	width:99%;
+	margin-top: 10px;
+	opacity: 60%;
+}
+
+h4 {
+	font-family: poppins;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	opacity: 50%;
+	margin-top: 10px;
+}
+
+.right p {
+	font-family: poppins;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 0px;
+}
+
+#envoyer{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #7FA8FE;
+	color: white;
+	text-decoration: none;
+	margin-left: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: poppins;
+	float: right;
+	margin-right: 20px;
+}
+
+#envoyer:hover{
+	background-color: #527AFE;
+}
+

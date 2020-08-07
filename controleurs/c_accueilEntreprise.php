@@ -1,0 +1,23 @@
+<?php
+/* 
+ * Page d'accueil des entreprises
+ * @author Keren Hassan 
+ */
+
+require_once '../model/class.pdomiiting.php';
+$pdo =  PdoMiiting::getPdoMiiting();
+// session_start();
+
+
+// requete pour avoir le nombre de devis
+
+// requete pour avoir le nombre de conversation
+$nbConv=$pdo->getNbConvPresta( $_SESSION['id']);
+// requete pour avoir le nombre de contrats 
+$nbcontrat =$pdo->getNbContratsPresta($_SESSION['id']);
+
+
+
+// include '../vues/v_accueilEntreprise.php';
+include '../vues/v_accueil_entreprise.php';
+?>

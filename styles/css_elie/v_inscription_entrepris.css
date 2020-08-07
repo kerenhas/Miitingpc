@@ -1,0 +1,38 @@
+.header {
+    margin-top: 10px;
+}
+
+.didi
+{
+    color: red;
+}
+
+.test
+{
+    background-image: url(../images_miiting/images_application/image_fond_appli_bis.png); background-repeat: no-repeat; height: 34em; background-position-x: center; opacity: .8;
+}
+
+.background {
+	/* background-image: url("../img/background6.png"); */
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.background h1{
+	font-family: proxima nova;
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	padding-top: 40px;
+}
+
+#sous-titre{
+	font-size: 20px;
+	font-family: poppins;
+	color: white;
+	text-align: center;
+	font-weight: normal;
+}

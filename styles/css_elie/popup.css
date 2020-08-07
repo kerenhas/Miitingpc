@@ -1,0 +1,85 @@
+.containerpopup {
+	width: 100%;
+	margin:auto;
+	background-color: #FBFBFB;
+	padding:15px;
+	border-radius:  10px;
+	box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.75);
+	height: 100%;
+}
+
+
+.content h1{
+	font-family: proxima nova;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.contentpop{
+	width: 70%;
+    margin: auto;
+}
+
+hr{border:solid 1px;
+	border-color: #527AFE;
+	width:32%;
+	opacity: 50%;
+	margin-top: 5px;
+}
+.content h3{
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: poppins;
+	font-weight: 500;
+}
+
+.content h3 input{
+	padding: 10px;
+	padding-right: 40px;
+	margin-left: 10px;
+}
+
+input:focus{
+	outline: none;
+}
+
+select{
+	margin-left: 10px;
+	padding: 5px;
+	font-family: poppins;
+	font-size: 18px;
+
+}
+
+select:focus {
+	outline: none;
+
+}
+#message{
+	width: 350px;
+	padding-bottom: 100px;
+}
+
+/* a {
+	padding: 10px;
+	border-radius: 10px;
+	/* background-color: #7FA8FE; */
+	/* color: white;
+	text-decoration: none;
+	margin-left: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: poppins;
+	float: right;
+	margin-right: 25px;
+} */ 
+
+/* a:hover{
+	background-color: #527AFE;
+} */
+
+.form-group{
+	margin-top: 20px;
+}

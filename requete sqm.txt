@@ -1,0 +1,1 @@
+INSERT INTO `prestataires`(`idprestataire`, `nomentreprise`, `logo`, `telfix`, `telmob`, `mail`, `description`, `adr`, `etoile`) VALUES (1,"Miting","https://www.google.com/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F3572978953%",0177808288,0783962248,"keren@gmail.com","tres belle salle avec des fleursé","16 avenue du huit mai",2)

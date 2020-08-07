@@ -1,0 +1,28 @@
+.wrapper-boutiquemag
+{
+    display: grid;
+    grid-template-columns: 18em  38em  ;
+    grid-template-rows: 13em;
+    margin: 0px;   
+}
+.colordore
+{
+    color: PaleGoldenrod;
+}
+.rond
+{
+    border-radius: 135px;
+}
+.article
+{
+margin-left: 6%;
+margin-right: 18%;
+font-size: 25px;
+}
+
+.flou
+{
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+}

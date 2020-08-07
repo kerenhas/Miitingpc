@@ -1,0 +1,30 @@
+#anniv {
+    width: 145px;
+    -webkit-filter: brightness(60%);
+    border-radius: 10px;
+}
+
+#mariage{
+    width: 145px;
+    -webkit-filter: brightness(60%);
+    border-radius: 10px;
+
+}
+
+#corpo {
+    width: 145px;
+    -webkit-filter: brightness(60%);
+    border-radius: 10px;
+}
+
+.wrapper-organiser-logo{
+    position: relative;
+}
+
+.anniversaire{
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    font-weight: 500;
+}
