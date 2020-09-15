@@ -27,7 +27,7 @@
 		</div>
 		<hr id="div">
 <body>
-	<div class="sous-entete">
+<div class="sous-entete">
 		<a href="accueilEntreprise">
 		<div class="accueil">
 			<img src="images_miiting/images_acces_entreprise/accueil.png">
@@ -40,11 +40,11 @@
 			<h3>Vitrine</h3>
 		</div>
 		</a>
-		<div class="devis">
+		<a style="margin-top: -2%;" href="messagerie_entreprise"><div class="devis">
 			<img src="images_miiting/images_acces_entreprise/devis.png">
 			<h3>Messagerie</h3>
-		</div>
-  </div>
+		</div></a>
+	</div>
   
 
 	<!DOCTYPE html>

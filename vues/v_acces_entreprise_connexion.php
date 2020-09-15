@@ -30,7 +30,7 @@
 				<input name="mail" id="mail" placeholder="mail d'utilisateur" >
 				<br>
 				<img src="images_miiting/images_acces_entreprise/mdp.png">
-				<input name="mdp" id="mdp" type="password" placeholder="Mot de passe">
+				<input name="mdp" id="mdp" type="password" placeholder="Mot de passe" style="width: 65%;">
 				<br>
 				<!-- <a href="#">Se connecter</a> -->
 				<button  type="submit" name="connecter" id="connecter" class="btn btn-light">Connecter</button>

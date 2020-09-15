@@ -1,0 +1,43 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+ 
+require_once '../model/class.pdomiiting.php';
+$pdo =  PdoMiiting::getPdoMiiting();
+
+$nom=" ";
+$prenom=" ";
+$email=" ";
+$tel=" ";
+$societe=" " ;
+$activite=" ";
+$apropos=" ";
+$siret= " ";
+
+$form=$_GET['form'];
+
+if($form=="1")
+{
+   $nom=$_POST['nom'];
+   $prenom=$_POST['prenom'];
+   $email=$_POST['email'];
+   $tel=$_POST['tel'];
+   $societe=$_POST['societe'];
+   $activite=$_POST['activite'];
+//   $apropos=$_POST['apropos'];
+   $siret=$_POST['siret'];
+   try{
+       $inscription=$pdo->inscriptionmmitingor($nom,$email,$prenom,$tel,$societe,$activite,$siret,$_POST['apropos']);
+   } catch (Exception $ex) {
+exit('<b>Catched exception at line '. $e->getLine() .' :</b> '. $e->getMessage());
+   }
+         
+   
+} 
+include '../vues/v_miitingor.php';

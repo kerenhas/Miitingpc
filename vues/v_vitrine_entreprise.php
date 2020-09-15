@@ -46,9 +46,9 @@
 			<h3>Vitrine</h3>
 		</div>
 		</a>
-		<a href="messagerie_entreprise"><div class="devis">
+		<a style="margin-top: -2%;" href="messagerie_entreprise"><div class="devis">
 			<img src="images_miiting/images_acces_entreprise/devis.png">
-			<h3>Demande de devis</h3>
+			<h3>Messagerie</h3>
 		</div></a>
 	</div>
 <!-- <div class="entete">

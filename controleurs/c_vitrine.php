@@ -6,7 +6,7 @@
 
 require_once '../model/class.pdomiiting.php';
 $pdo =  PdoMiiting::getPdoMiiting();
-session_start();
+
 
 //On va faire une requete pour avoir la liste des intitules de prestations proposes : 
 $prestationIntitule=$pdo->getPrestationIntitule();

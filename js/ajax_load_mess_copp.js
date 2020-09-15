@@ -13,6 +13,7 @@ function getMessagesEnvoyes()
 }
 
 function repondre(idconv, idmessage){
+  
   $(".messagerie").load("controleurs/c_messagerie_send_mess.php", { // N'oubliez pas l'ouverture des accolades !
   idconv :   idconv, 
   idmessage: idmessage
@@ -22,7 +23,8 @@ function repondre(idconv, idmessage){
 
 
 function envoyer(idconv, idmessage){
-  window.location.reload();
+ 
+  // window.location.reload();
       $(".messagerie").load("controleurs/c_message_enregistrer.php", { 
       message : $("#envoyermess").val(),
       idconv :   idconv, 

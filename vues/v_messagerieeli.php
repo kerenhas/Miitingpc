@@ -62,7 +62,8 @@
 			<div class="rightup">
 				<div class="right">
 					<?php
-					for ($i = 0; $i < count($message); $i++) {
+					for ($i = 0; $i < count($message); $i++) 
+					{
 					?>
 						<div class="right1">
 							<h2><?php echo $message[$i]['libellepresta'] . "-" . $message[$i]['libelleprestation']; ?></h2>
@@ -126,6 +127,6 @@
 	?>
 
 </body>
-									</div>
+</div>
 
 </html>

@@ -31,7 +31,7 @@
                             src="<?php echo $carspreta[$i]['logo'];?>" alt="Card image cap">
                             <div class="card-body">
                               <h4 class="card-title"><?php echo $carspreta[$i]['libelle'];?></h4>
-                              <p class="card-text"><?php  echo $carspreta[$i]['description'];?> </p>        
+                              <p class="card-text"> <?php echo fonctionsUtils::tronque($carspreta[$i]['description'], 80); ?></p>        
                              </div>
                         </div> 
                         <?php

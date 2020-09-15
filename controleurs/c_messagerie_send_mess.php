@@ -14,28 +14,22 @@ $idmessage=$_POST['idmessage'];
 
 //requete qui calcule le nombre de messages recus
 $nbrMessagesRecus=$pdo->getNbrMessagesRecus($_SESSION['id'], $_SESSION['idevent']); 
-//echo $nbrMessagesRecus[0]['count(*)'];
 
 //requete qui permet d'avoir le nombre de messages envoyes
 $nbrMessagesEnvoyes=$pdo-> getNbrMessagesEnvoyes($_SESSION['id'], $_SESSION['idevent']);
 
 // requete pour avoir le message a partir de son id
-// $message = $pdo->getMessage($idmessage);
 $message = $pdo->getMessage($idmessage);
-
 
 if(isset($_POST['nouvelleconnexion']))
 {
 
     $idpresta=$_POST['idpresta'];
     // TODO AJOUTER UN OBJET 
+
     $pdo->newConv($_SESSION['id'],$idpresta,$_SESSION['idevent'],$_POST['objet']);
-
-    
      // on recupere l'idcov
-     $idconv=$pdo->getidconv($_SESSION['id'],$idpresta,$_SESSION['idevent'],$_POST['objet']);
-
-    
+     $idconv=$pdo->getidconv($_SESSION['id'],$idpresta,$_SESSION['idevent'],$_POST['objet']);  
 
     //   requete qui insere le message a la base de donne
       try{

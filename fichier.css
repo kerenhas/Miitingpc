@@ -1332,7 +1332,7 @@ a{
 }
 
 .result_focus{
-  background-color:azure;
+  background-color:#337ab7;
 }
 
 .insci-label
@@ -1341,3 +1341,7 @@ a{
   margin-top: 12%;
 }
 
+.search {
+	position: relative;
+	width: 110%;
+}

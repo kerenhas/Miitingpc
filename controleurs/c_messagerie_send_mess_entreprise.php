@@ -5,7 +5,6 @@
  */
 require_once '../model/class.pdomiiting.php';
 $pdo =  PdoMiiting::getPdoMiiting();
-session_start();
 
 //id le conversation 
 $idconv=$_POST['idconv'];

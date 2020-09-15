@@ -58,10 +58,16 @@ select:focus {
 
 }
 #message{
-	width: 350px;
-	padding-bottom: 100px;
+	margin-top: 4%;
+	/* width: 350px;
+	padding-bottom: 100px; */
 }
 
+.btnenvoyer
+{
+	margin-left: 48%;
+    width: 13%;
+}
 /* a {
 	padding: 10px;
 	border-radius: 10px;

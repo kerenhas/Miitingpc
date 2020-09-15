@@ -26,7 +26,7 @@ else{
     //idenvoyeur
     $idenvoyeur = $_SESSION['id'];
 
-    $idreceveur = $pdo->getIdEnvoyeur($idconv,$idenvoyeur);
+    $idreceveur = $pdo->getIdReceveur($idconv,$idenvoyeur);
 
        //Requete qui renregsite un nouveaux messages
        $pdo->newMessage($text,$idconv,$idenvoyeur,$idreceveur[0]['util']);

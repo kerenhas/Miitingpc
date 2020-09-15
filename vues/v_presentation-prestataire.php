@@ -34,7 +34,7 @@ include '../vues/v_entete.php';
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" language="javascript" src="node_modules/jquery/dist/jquery.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="styles/css_elie//popup.css">
+	<link rel="stylesheet" type="text/css" href="styles/css_elie/popup.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<title>Presentation Prestataire</title>
 </head>
@@ -43,22 +43,13 @@ include '../vues/v_entete.php';
 	<div class="header">
 		<div class="top">
 			<div class="left">
+				
 				<h1><?php echo $prestataire[0]["libelle"]; ?> <span><?php echo $prestataire[0]["libelleprestataion"]; ?></span></h1>
-				<h3><?php echo $prestataire[0]["adr"]; ?></h3>
+				<h3><?php echo $prestataire[0]["adr"]." Site: ".$prestataire[0]["site"]; ?></h3>
+				<h3><?php echo $prestataire[0]["mail"] ;?></h3>
 			</div>
-			<div class="right">
-				<?php
-				if (!isset($_SESSION['nom'])) {
-				?>
-					<a onclick="alertMessage();" class="btn btn-outline-danger" role="button" aria-pressed="true" id="myBtn">Contacter</a>
-				<?php
-				} else {
-				?><a onclick="addconv('2');" class="btn btn-outline-danger" role="button" aria-pressed="true" id="myBtn">Contacter</a>
-				<?php
-				}
-				?>
-				<!-- <a href="prestation-<?php ?>">Contacter</a> -->
-			</div>
+			
+			
 		</div>
 		<div class="bottom">
 			<!-- <div class="boutton">
@@ -70,6 +61,22 @@ include '../vues/v_entete.php';
 					<ul>
 						<img src="images_miiting/images_prestataire/coin.png"> <?php echo $prestataire[0]["tarifs"]; ?>
 					</ul>
+					<div class="right">
+				<?php
+				if (empty($_SESSION['nom'])) {
+				?>
+					<a onclick="alertMessage();" class="btn btn-outline-danger" role="button" aria-pressed="true" >Contacter</a>
+				<?php
+				} else {
+				?><a onclick="addconv('2');" class="btn btn-outline-danger" role="button" aria-pressed="true" id="myBtn">Contacter</a>
+				<?php
+				}
+				?>
+				<!-- <a href="prestation-<?php ?>">Contacter</a> -->
+			</div>
+					<!-- <ul>
+						<img src="images_miiting/images_prestataire/coin.png"> <?php echo $prestataire[0]["tarifs"]; ?>
+					</ul> -->
 				</div>
 			</div>
 		</div>
@@ -168,11 +175,11 @@ include '../vues/v_entete.php';
 		<!-- <link rel="stylesheet" type="text/css" href="styles/css_elie//popup.css"> -->
 		<div class="containerpopup">
 			<div class="contentpop">
-				<h1>Nouvau message</h1>
+				<h1 style="margin-left: 32%;">Nouveau message</h1>
 				<hr>
 				<form action="mamessagerie" method="post" enctype="multipart/form-data">
-					<h3>Objet: <input type="text" placeholder="Titre" name="objet" id="objet"></h3>
-					<h3 id="presta">Prestataires: <h3>
+					<input type="text" placeholder="Objet" name="objet" id="objet">
+					<p id="presta">Choisissez votre prestataire : <p>
 							<select name="idpresta" id="idpresta">
 								<?php
 								for ($i = 0; $i < count($prestataires); $i++) {
@@ -182,9 +189,12 @@ include '../vues/v_entete.php';
 								}
 								?>
 							</select>
-							<h3>Message :<input placeholder="Ecrivez votre message" id="message" type="text" name="message"></h3>
+							
+							<textarea placeholder="Votre message..." class="form-control" id="message" rows="5" name="message"></textarea>
+							
+							<!-- <input placeholder="Ecrivez votre message" id="message" type="text" name="message"></h3> -->
 			</div>
-			<button type="submit" href="#" name="nouvelleconnexion">Envoyer</button>
+			<button type="submit"  class="btn btnenvoyer btn-primary btn-lg" name="nouvelleconnexion">Envoyer</button>
 			</form>
 		</div>
 

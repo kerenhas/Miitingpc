@@ -103,7 +103,7 @@ include '../vues/v_entete.php';
 		</div> -->
 		<h3>Message :<input placeholder="Ecrivez votre message" id="message" type="text" name="message"></h3>
 		</div>
-		<button type="submit" href="#" name="nouvelleconnexion">Envoyer</button>
+		<button type="submit" id="" name="nouvelleconnexion">Envoyer</button>
 		</form>
 	</div>
 

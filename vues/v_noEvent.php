@@ -5,123 +5,117 @@
 
 include '../vues/v_entete.php';
 ?>
-
-<!-- texte -->
-<p> Vous etes pret .... mettre un article ????? Commencez a creer votre evenement </p>
-
-<!-- image -->
-<p>mettre une photo peut etre ????? </p>
+	<link rel="stylesheet" type="text/css" href="styles/css_elie/new-event_popup.css">
 
 <!-- bouton creer un evenement -->
-<center>  <button style="border-color: blue; margin-left: 32%; width: 40%; "  class="btn btn-light">Créer event  </button></center>
-<button id="myBtn">Open Modal</button>
+<center>  <button  id="myBtn" style="border-color: blue; margin-left: 32%; width: 40%; "  class="btn btn-light">Créer event  </button>
+<!-- <button id="myBtn">Open Modal</button> -->
+</center>
+
+<img style="margin-left: 50%" src="images_miiting/images_boutique_marie/pub2.png">
 
 
 
-   <!-- The Modal -->
-   <div id="myModal" class="modal">
+<!-- The Modal -->
+<div id="myModal" class="modal" style="overflow: scroll;">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<title>Editer son évênement</title>
+		</head>
 
-<!-- Modal content -->
-<!-- la on va mettre notre formulaire pour lorsqu'il s'inscrit sur le site et qu'il se connecte pour la premiere fois-->
-<div class="modal-content" style="height: 89%;">
-    
-  <span class="close">&times;</span>
-  <div class="wrapper-form_modal_ajouter_evenement">
-       <img src="images_miiting/images_marie_accueil/costume1.jpeg" alt="modal new event img" style="height: 98%; width: 90%">
-       <div>
-         <h4 class="policeNewRoman ctr" style="color: purple; margin-top: 3%;">A propos de vous </h4>  
-         <strong> <?php  echo $_SESSION['prenom'].$_SESSION['nom']." : "; ?></strong>
-         <h6 style=" margin-top: 3%;">Vous organisez..</h6>
-         <form action="newevent" method="post" enctype="multipart/form-data">
-           
-             <input style="margin-left: 19%;" type="radio" name="event" checked value="corpo"><label class="radio-inline">Soirée Corporate
-           </label>
-           
-             <input type="radio" name="event" value="anniv"><label class="radio-inline">Anniversaire
-           </label>
-         
-             <input type="radio" name="event" value="mariage">  <label class="radio-inline">Mariage
-           </label>
-             <div class="form-group">
-                 <!-- $_FILES['icone']['type']    pour recuperer le src de l'image -->
-                  <h6 for="fichier" style="margin: 1%;">Une photo de l'evenement : </h6>
-               <input  style="margin-left: 19%; margin-top: 5%; margin-bottom: 5%" name="coco"  type="file" class="form-control-file" id="coco">
-               <h6>A propos de l'evenement...</h6>   
-               <div class='wrapper-form_modal_ajouter_evenement-champ' >
-                   <p>Date :</p><p>Nombre d'invités: </p>
-                   <input type="date" name="date" style='margin-right: auto ;' name="date" id="date">
-                   <input class="form-control" type="number" value="250" id="nbinvites" name="nbinvites">
- 
-               </div>
-                <div class='wrapper-form_modal_ajouter_evenement-champ' >
-                   <p style="margin-top: 5%; ">Ville :</p><p  style="margin-top: 5%; margin-left: 5%; ">Nommer votre evenement: </p>
-                   <input type="text" style='margin-right: auto ; height: 40%; width: 80%;' name="ville" id="ville">
-                   
-                   <input style="margin-left: 5%; height: 40%; " type="text" id="nomevent" name="nomevent">
- 
-               </div>
-               <h6>Selectionnez les prestataires dont vous avez besoin: </h6>     
-               <div class='wrapper_check'>
-                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="traiteur" id="traiteur">
-                      <label class="form-check-label" for="inlineCheckbox1">Traiteur</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Photographe" id="Photographe">
-                      <label class="form-check-label" for="inlineCheckbox2">Photographe</label>
-                    </div>
-                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="salle" id="salle">
-                      <label class="form-check-label" for="inlineCheckbox2">Lieu de reception</label>
-                    </div>
-                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Photos et vidéos" id="Photos et vidéos">
-                      <label class="form-check-label" for="inlineCheckbox2">Photos et vidéos</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Location de voiture" id="Location de voiture">
-                      <label class="form-check-label" for="inlineCheckbox2">Location de voiture</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Robescostumes" id="Robescostumes">
-                      <label class="form-check-label" for="inlineCheckbox2"> Robes & costumes</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Cadeaux" id="Cadeaux">
-                      <label class="form-check-label" for="inlineCheckbox2">Cadeaux</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Décoration" id="Décoration" >
-                      <label class="form-check-label" for="inlineCheckbox2">Décoration</label>
-                   </div>
-                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Décoration" id="Décoration" >
-                      <label class="form-check-label" for="inlineCheckbox2">Musique & Animation</label>
-                   </div>
-                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Décoration" id="Décoration" >
-                      <label class="form-check-label" for="inlineCheckbox2">Faire-part</label>
-                   </div>
-                   <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="Décoration" id="Décoration" >
-                      <label class="form-check-label" for="inlineCheckbox2">Wedding Planner</label>
-                   </div>
-               </div>
-              <center><button type="submit" style="margin-top: 3%;" name="enregistrer" id="enregistrer" class="btn btn-light">Enregistrer</button></center>
+		<body>
+			<div class="containerpop">
+				<img id="cross" src="images_miiting/images_acces_entreprise/cross.png">
+				<h1>Editer l'évênement</h1>
+				<hr>
+				<!-- <div class="backgroundpop"> -->
+					<!-- <img id="photo"> -->
+        <!-- </div> -->
+      <form action="newevent" method="post" enctype="multipart/form-data">
+				<div class="content1pop">
+					<input placeholder="Titre" type="text" id="nomevent" name="nomevent">
+				</div>
+				<h2>Informations</h2>
+				<div class="content2pop">
+        <input type="Date" name="date" id="date">
+        <!-- <div class="container">
+          <div class="col-md-6">
+          <input type="text" placeholder="lieu" name="ville" id="ville">
+          </div>
+          <div class="col-md-6">
+          <input placeholder="Nombre d'invités " type="text" id="nbinvites" name="nbinvites">
+          </div>
+        </div> -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+            <input type="text" placeholder="lieu" name="ville" id="ville">
+            </div>
+            <div class="col">
+            <input placeholder="Nombre d'invités " type="text" id="nbinvites" name="nbinvites">
+            </div>
            </div>
-         </form>
-         <p></p>
-       </div>
-       
+          </div>
+				</div>
+        <h6 for="fichier" style="margin: 1%;">Une photo de l'evenement : </h6>
+         <input  style="margin-left: 19%; " name="coco"  type="file" class="form-control-file" id="coco">
+				<h2>Prestataires</h2>
+				<div class="content3pop">
+					<div class="line1pop">
+						<img src="images_miiting/images_acces_entreprise/banquet.png">
+						<h3>Traiteur</h3>
+						<input type="checkbox" id="traiteur" name="traiteur">
+						<img src="images_miiting/images_acces_entreprise/dress.png">
+						<h3>Robe</h3>
+						<input type="checkbox" id="robe" name="robe">
+						<img src="images_miiting/images_acces_entreprise/car.png">
+						<h3>Location voiture</h3>
+						<input type="checkbox" name="voit" id="voit">
+						<img src="images_miiting/images_acces_entreprise/photo2.pn">
+						<h3>Photographe</h3>
+						<input type="checkbox" name="photographe" id="photographe">
+					</div>
+
+					<div class="line2pop">
+						<img src="images_miiting/images_acces_entreprise/decoration.png">
+						<h3>Décoration</h3>
+						<input type="checkbox" name="decorateur" id="decorateur">
+						<img src="images_miiting/images_acces_entreprise/gift.png">
+						<h3>cadeaux</h3>
+						<input type="checkbox" name="cadeaux" id="cadeaux">
+						<img src="images_miiting/images_acces_entreprise/music.png">
+						<h3>DJ</h3>
+						<input type="checkbox" name="dj" id="dj">
+						<img src="images_miiting/images_acces_entreprise/card.png">
+						<h3>Faire-part</h3>
+						<input type="checkbox" name="faire_part" id="faire_part">
+					</div>
+					<div class="line3pop">
+						<img src="images_miiting/images_acces_entreprise/animation.png">
+						<h3>Animation</h3>
+						<input type="checkbox" name="animation" id="animation">
+						<img src="images_miiting/images_acces_entreprise/reception.png">
+						<h3>Reception</h3>
+						<input type="checkbox" name="reception" id="reception">
+						<img src="images_miiting/images_acces_entreprise/planner.png">
+						<h3>Wedding Planner</h3>
+						<input type="checkbox" name="wedding_planner" id="wedding_planner">
+					</div>
+					<!-- <a href="#">Enregistrer</a> -->
+        </div>     
+      </div>
+      <button type="submit" style="margin-top: 3%;" name="enregistrer" id="enregistrer" class="btn btn-light">Enregistrer</button>
+      </form>
   </div>
-  
- 
-  
 </div>
 
-</div>
 
-</div>
 
 <script type="text/javascript" src='js/add_conversation.js'></script>
+<?php
+  include '../vues/footerelie.php';
+// include '../vues/v_footer.html';
+?>
 

@@ -141,7 +141,7 @@ input:focus{
 
 .search img{
 	position: absolute;
-	top: 65px; left: 12px;
+	top: 18px; left: 12px;
 	width: 25px;
 }
 
@@ -263,7 +263,8 @@ h2{
 }
 
 .left1 img{
-	width: 270px;
+	width: 264px;
+	height: 176px;
 	margin-right: 10px;
 }
 
@@ -341,6 +342,7 @@ h2{
 }
 
 .left2 img{
+	height: 85%;
 	width: 105px;
 	margin-right: 10px;
 

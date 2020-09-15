@@ -110,6 +110,17 @@ function refuserToucheEntree(event)
                <button  style="position: absolute; bottom: 25%; left: 95%; "  type="btn" name="rechercher" id="rechercher" class="btn btn-info">Rechercher</button> 
                 </div>
              </div>
+
+             <!-- <div class="search">
+                <img src="images_miiting/images_prestataire/search.png">
+                <input placeholder=" Que Recherchez-vous?" id="search" type="search" name="search" autocomplete="off" onkeypress="refuserToucheEntree(event);">
+                <input placeholder="Ou ça ?"id="right" >
+                <div id="results" style="background-color: white;position: absolute; left: 4%; width: 38%;">
+                </div>
+                <button type="btn" name="rechercher" id="rechercher">Recherche</button>
+              </div>
+     -->
+              
         </form>
      
         </div>

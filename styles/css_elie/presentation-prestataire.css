@@ -372,7 +372,9 @@ h1{
 	color: white;
 	font-size: 12px;
 	margin-right: 10px;
-	margin-bottom: 15px;
+	/* margin-bottom: 15px; */
+	float: right;
+	margin-top: -10%;
 }
 
 .right1 a:hover{
@@ -381,14 +383,14 @@ h1{
 
 #pub2 {
 	position: absolute;
-	top: 1100px;
+	top: 237%;
 	right: 40px;
 	width: 200px;
 }
 
 #pub1 {
 	position: absolute;
-	top: 850px;
+	top: 198%;
 	right: 40px;
 	width: 150px;
 }

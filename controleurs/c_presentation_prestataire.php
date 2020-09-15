@@ -51,10 +51,7 @@ if (count($prestataire) == 0) {
 
     //requete pour avoir la liste des prestataires que l'utilisateur peut contacter 
     $prestataires = $pdo->getPrestataire();
-    //sinn alors lien vers la page de connection
 
-    //requete pour voir toutes les quetions repondus
     $questionsReponses = $pdo->getQuestions($id);
-
     include '../vues/v_presentation-prestataire.php';
 }

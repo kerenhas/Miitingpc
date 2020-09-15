@@ -21,7 +21,7 @@ include '../vues/v_entete.php';
 	<div class="background" style="background-image: url('images_miiting/images_boutique_marie/backgroundd.png');">
 	</div>
 	<div class="test2">
-		<h1 class="title1">Mariage David</h1>
+		<h1 class="title1"><?php echo $img[0]["libelle"];?></h1>
 	</div>
 	<hr>
 	<div class="sous-menu">

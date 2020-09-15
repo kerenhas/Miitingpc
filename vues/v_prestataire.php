@@ -48,9 +48,15 @@
 			<ul>
 				<?php
 
-				for ($i = 0; $i < 9; $i++) {
+				for ($i = 0; $i < 9; $i++)
+				 {
 				?>
-					<a href="prestation-<?php echo $prestatations[$i]['id']; ?>" ><?php echo $prestatations[$i]['libelle']; ?></a>
+					<a
+					 <?php if(!empty($prestataires[0]['prestation_libelle']) && $prestataires[0]['prestation_libelle'] == $prestatations[$i]['libelle'])
+					 { 
+						
+					?> style="background-color:aliceblue;" <?php
+					} ?> href="prestation-<?php echo $prestatations[$i]['id']; ?>" ><?php echo $prestatations[$i]['libelle']; ?></a>
 				<?php
 				}
 				?>
@@ -64,12 +70,17 @@
 				for ($i = 9; $i < count($prestatations); $i++) {
 				?>
 					<!-- <a onclick="prestation(<?php //echo $prestatations[$i]['id']; ?> );"><?php //echo $prestatations[$i]['libelle']; ?></a> -->
-					<a href="prestation-<?php echo $prestatations[$i]['id']; ?>" ><?php echo $prestatations[$i]['libelle']; ?></a>
+					<a 					 <?php if(!empty($prestataires[0]['prestation_libelle']) && $prestataires[0]['prestation_libelle'] == $prestatations[$i]['libelle'])
+					 { 
+						
+					?> style="background-color:aliceblue;" <?php
+					} ?> href="prestation-<?php echo $prestatations[$i]['id']; ?>" ><?php echo $prestatations[$i]['libelle']; ?></a>
 				<?php
 				}
 				?>
 			</ul>
 		</div>
+
 		<?php
 		// affichage de tous les prestataires si il y en a 
 		if (count($prestataires) <> 0) 
@@ -87,7 +98,7 @@
 							<div class="right1">
 								<h3><?php echo $prestataires[$i]['libelle'] . "-" . $prestataires[$i]['nom_contact'] ?></h3>
 								<h4><?php echo $prestataires[$i]['prestation_libelle'] ?></h4>
-								<p><?php echo fonctionsUtils::tronque($prestataires[$i]["description"], 250); ?></p>
+								<p><?php echo fonctionsUtils::tronque($prestataires[$i]["description"], 200); ?></p>
 								<div class="bottom">
 									<!-- <h5><span>Telephone:</span> <?php //echo $prestataires[$i]['tel'] 
 																		?></h5> -->
@@ -102,7 +113,7 @@
 					?>
 				</div>
 					<?php
-					if (count($prestataires) > 2) 
+					if (count($prestataires) >= 2) 
 					{
 					?>
 				<div class="rightbig">
@@ -112,7 +123,7 @@
 					?>
 						<div class="right">
 							<div class="left2">
-								<img src="images_miiting/images_prestataire/table.png">
+								<img src="<?php echo $prestatairesSuivant[$i]['logo'] ; ?>">
 							</div>
 							<div class="right2">
 								<h3><?php echo $prestatairesSuivant[$i]['libelle'] . "-" . $prestatairesSuivant[$i]['nom_contact'] ?></h3>
@@ -168,9 +179,12 @@
 	</div>
 	<script type="text/javascript" language="javascript" src="js/ajax_search_nav.js"></script>
 	<script type="text/javascript" language="javascript" src="js/presta.js"></script>
+	<footer style="margin-top: 20%;">
 	<?php
 	include '../vues/footerelie.php';
 	?>
+	</footer>
+
 </div>
 </body>
 

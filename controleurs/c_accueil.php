@@ -8,6 +8,7 @@
 
 require_once 'model/class.pdomiiting.php';
 $pdo =  PdoMiiting::getPdoMiiting();
-  $carspreta=$pdo->getPrestataire();
+require 'model/functions.php';
+$carspreta=$pdo->getPrestataire();
 
 require 'vues/v_accueil.php';

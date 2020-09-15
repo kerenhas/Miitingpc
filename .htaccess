@@ -1,10 +1,9 @@
 RewriteEngine On 
 
-RewriteRule ^inscription-([0-9])$ controleurs/c_inscription.php?form=$1 [L]
 RewriteRule ^inscription$ controleurs/c_inscription.php
 RewriteRule ^connexion-([0-9])$ controleurs/c_connexion.php?form=$1 [L]
 RewriteRule ^connexion-([0-9])$ controleurs/c_connexion.php?form=$1 [L]
-
+RewriteRule ^inscription-([0-9])$ controleurs/c_inscription.php?form=$1 [L]
 RewriteRule ^index$ controleurs/c_accueil.php
 
 RewriteRule ^deconnexion$ controleurs/c_deconnexion.php
@@ -30,6 +29,7 @@ RewriteRule ^prestaevent-([0-9])-([0-9])$ controleurs/c_prestamonevent.php?form=
 RewriteRule ^prestaevent$ vues/v_prestationmonevent.php
 RewriteRule ^message-([0-9])$ vues/v_addconversation.php
 RewriteRule ^mamessagerie$ controleurs/c_messagerie.php
+RewriteRule ^mamessagerie_send$ controleurs/c_messagerie_send_mess.php
 #RewriteRule ^conversation$ controleurs/c_conversation.php
 #RewriteRule ^newconversation$ controleurs/c_newconversation.php
 
@@ -85,7 +85,7 @@ RewriteRule ^messagerie_entreprise$ controleurs/c_messagerie_entreprise.php
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
 #RewriteRule ^(.*)$ index.php?url=$1 [NC,L]
-#
+
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 #RewriteRule ^(.*)$ https://www.miiting.net/$1 [R,L] 

@@ -41,7 +41,7 @@ include '../vues/v_entete.php';
                 <div id="results" style="background-color: white;position: absolute; left: 4%; width: 38%;">
                 </div>
                 <button type="btn" name="rechercher" id="rechercher">Recherche</button>
-            </div>
+        </div>
 		</form>
 	</div>
 	<div class="container">

@@ -482,9 +482,10 @@ class PdoMiiting
      * Requete qui permet d'inserer dans la table evenement une image de l'evenement
      * ainsi que le nombre d'invites', la date, la ville, le type d'evenement
      */
-    public function addevent($date, $nbinvite, $ville, $idutilisateur, $idevent, $nomevent)
+    public function addevent($date, $nbinvite, $ville, $idutilisateur, $nomevent)
     {
 
+        $idevent="2";
         $requetePrepare = PdoMiiting::$monPdo->prepare(
                 'INSERT INTO evenement(libelle, date, ville, bninvite, idutilisateur, idevent )'
                     . 'VALUES(:unLibelle, :uneDate, :uneVille, :unNbInvite, :unUtilisateur, :unIdEvent)'
@@ -1217,7 +1218,7 @@ class PdoMiiting
         $requetePrepare = PdoMiiting::$monPdo->prepare(
             'SELECT distinct receveur as util '
                 . 'FROM message '
-                . 'WHERE message.idconversation= :unIdConv and message.envoyeur=:unIdEnvoyeur'
+                . 'WHERE idconversation= :unIdConv and envoyeur=:unIdEnvoyeur'
 
         );
 

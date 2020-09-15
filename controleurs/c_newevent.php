@@ -9,25 +9,26 @@ $pdo =  PdoMiiting::getPdoMiiting();
 
 if(isset($_POST['enregistrer']))
 {
+    echo "je sis la";
     // pour connaitre le type de l'evenement
-    $idtypeevent=" ";
-    if($_POST['event']=='corpo')
-        {
-        $idtypeevent="2";
+    // $idtypeevent=" ";
+    // if($_POST['event']=='corpo')
+    //     {
+    //     $idtypeevent="2";
             
-        }
-    if($_POST['event']=='anniv')
-        {
-        $idtypeevent="1";
+    //     }
+    // if($_POST['event']=='anniv')
+    //     {
+    //     $idtypeevent="1";
         
-        }
-    if($_POST['event']=='mariage')
-        {
-            $idtypeevent="3";
-        }
+    //     }
+    // if($_POST['event']=='mariage')
+    //     {
+    //         $idtypeevent="3";
+    //     }
     try
         {  
-        $pdo->addevent($_POST['date'], $_POST['nbinvites'], $_POST['ville'],$_SESSION['id'],$idtypeevent,$_POST['nomevent']);
+        $pdo->addevent($_POST['date'], $_POST['nbinvites'], $_POST['ville'],$_SESSION['id'],$_POST['nomevent']);
         }
     catch (Exception $ex) 
      {
@@ -37,9 +38,8 @@ if(isset($_POST['enregistrer']))
     //    //il faut recuperer l'id de l'evenement, pour pouvoir enregistrer dans la table demandeclient l'id de levenement car un utilisateur peut avoir plusisuers evenement 
     //    // et faire donc plusieurs demande client
         $idevent=$pdo->getIdEvenement($_SESSION['id'], $_POST['date']);
-
+var_dump($idevent);
         $img=$_FILES['coco']['type'];
-         
 if (strlen($img) != 0) {
 
     $file_name = $_FILES['coco']['name']; // le nom du fichier

@@ -16,7 +16,7 @@ include 'vues/v_carousselle_accueil.php';
 
 <body>
   <br>
-  <center style="position: relative; margin-top: -7% ;">
+  <center style="position: relative; margin-top: -7% ; margin-right: 6%;">
     <!--style="margin-top: 36%;"-->
     <div class="container">
       <div class="wrapper-organiser">
