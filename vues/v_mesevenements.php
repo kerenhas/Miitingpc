@@ -35,7 +35,7 @@
 				<li>Prestataires</li>
 			</a>
 			<li>Tâches</li>
-				<li><a onclick="addconv('2');" class="btn btn-outline-danger" role="button" aria-pressed="true"  id="myBtn">Creer Event</a> </li>
+				<li><a  class="btn btn-outline-danger" role="button" aria-pressed="true"  id="myBtn">Creer Event</a> </li>
 			</ul>
 			<hr>
 		</div>
@@ -83,13 +83,15 @@
 
 <!-- Modal content -->
 <div class="modal-content">
-  <span class="close">&times;</span>
+ 
 
 	<title>Editer son évênement</title>
 </head>
 <body>
 	<div class="containerpop">
-		<img id="cross" src="images_miiting/images_acces_entreprise/cross.png">
+	<span onclick="fermer();" class="close">&times;</span>
+		<!-- <img id="cross" onclick="fermer();" src="images_miiting/images_acces_entreprise/cross.png"> -->
+
 		<h1>Editer l'évênement</h1>
 		<hr>
 	<!-- <div class="backgroundpop">
@@ -99,7 +101,6 @@
 			Titre de l'évênement:<input type="text" id="nomevent" name="nomevent">
 		</div>
 		<h2>Informations</h2>
-		<form action="newevent" method="post" enctype="multipart/form-data">
 		<h6 style=" margin-top: 3%;">Vous organisez..</h6>
          <form action="newevent" method="post" enctype="multipart/form-data">
            
